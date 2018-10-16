@@ -57,5 +57,27 @@ int main() {
     default:
       printf("Enter Valid Code\n" );
   }
+
+  printf("Enter Code\n" );
+  printf("------------------------------------------\n" );
+  printf("1:FOR ASCENDING SERIES\n" );
+  printf("2:FOR DECENDING SERIES\n" );
+  printf("------------------------------------------\n" );
+  scanf("%d",&code );
+
+  switch (code) {
+    case 1:
+      for (size_t i = 0; i < t; i++) {
+        printf("%d\n",element[i] );
+      }
+
+    case 2:
+      for (size_t i = t-1; i >=0; i--) {
+        printf("%d\n",element[i] );
+      }
+
+    default:
+      printf("Invalid Code\n" );
+  }
   return 0;
 }
